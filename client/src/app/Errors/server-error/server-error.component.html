@@ -1,0 +1,9 @@
+<p>Internal Server Error</p>
+
+<ng-container *ngIf="error">
+
+<h5 class='text-danger'> Error: {{error.message}}</h5>
+
+<p>Following is the Stack Trace</p>
+<code class="mt-5">{{error.details}}</code>
+</ng-container>
