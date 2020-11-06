@@ -8,9 +8,7 @@ import { User } from 'src/app/Models/User';
   styleUrls: ['./roles-modals.component.css']
 })
 export class RolesModalsComponent implements OnInit {
-// title:string;
-// list:any[]=[];
-// closeBtnName:string;
+  
 @Input() updateSelectedRoles = new EventEmitter();
 user:User;
 roles:any[];

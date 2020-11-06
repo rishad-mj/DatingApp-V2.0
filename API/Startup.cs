@@ -70,9 +70,14 @@ namespace API
             app.UseAuthentication();
             app.UseAuthorization();
 
+            //for Angular compiled Static Files
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToController("index", "Fallback");
             });
         }
     }
